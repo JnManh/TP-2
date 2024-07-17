@@ -9,6 +9,10 @@ app.get('/index', (req, res) => {
     res.render('index')
 })
 
+app.get('/c', (req, res) => {
+    res.render('calculadora')
+})
+
 app.post('/resultado', (req, res) => {
     let massa = parseFloat(req.body.massa)
     let massaM = parseFloat(req.body.massaM)
